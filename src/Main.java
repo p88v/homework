@@ -47,12 +47,10 @@ public class Main {
             } else if (input.equals("4")) {
                 System.out.print("Введите текст заметки для удаления: ");
                 String remForWords = scanner.nextLine();
-                for (int i = 0; i < list.size(); i++) {
-                    if (list.contains(remForWords)) {
-                        list.remove(i);
+                    if ( list.remove(remForWords)) {
                         System.out.println("Удаление по слову прошло успешно.");
                     } else System.out.println("Ошибка при удалении, попробуйте еще раз.");
-                }
+
             } else if (input.equals("5")) {
                 System.out.print("Введите ключевое слово для удаления: ");
                 String inp = scanner.nextLine();
