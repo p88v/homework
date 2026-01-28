@@ -37,12 +37,12 @@ public class Main {
                 System.out.print("Выберите номер элемента для удаления: ");
                 String del = scanner.nextLine();
                 int rem = Integer.parseInt(del);
+                rem -= 1;
                 for (int i = 0; i < list.size(); i++) {
-                    rem -= 1;
                     if (rem == i) {
                         list.remove(rem);
                         System.out.println("Удаление завершено успешно.");
-                    } else System.out.println("Ошибка удаления попробуйте еще раз.");
+                    }
                 }
             } else if (input.equals("4")) {
                 System.out.print("Введите текст заметки для удаления: ");
