@@ -38,12 +38,7 @@ public class Main {
                 String del = scanner.nextLine();
                 int rem = Integer.parseInt(del);
                 rem -= 1;
-                for (int i = 0; i < list.size(); i++) {
-                    if (rem == i) {
-                        list.remove(rem);
-                        System.out.println("Удаление завершено успешно.");
-                    }
-                }
+                list.remove(list.get(rem));
             } else if (input.equals("4")) {
                 System.out.print("Введите текст заметки для удаления: ");
                 String remForWords = scanner.nextLine();
