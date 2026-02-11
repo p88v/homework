@@ -38,7 +38,7 @@ public class Main {
                 String del = scanner.nextLine();
                 int rem = Integer.parseInt(del);
                 rem -= 1;
-                list.remove(list.get(rem));
+                list.remove(rem);
             } else if (input.equals("4")) {
                 System.out.print("Введите текст заметки для удаления: ");
                 String remForWords = scanner.nextLine();
