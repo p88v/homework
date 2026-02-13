@@ -38,6 +38,9 @@ public class Main {
                 String del = scanner.nextLine();
                 int rem = Integer.parseInt(del);
                 rem -= 1;
+                if(!list.contains(rem)){
+                    System.out.println("Такого номера дела в списке нет");
+                }
                 list.remove(rem);
             } else if (input.equals("4")) {
                 System.out.print("Введите текст заметки для удаления: ");
